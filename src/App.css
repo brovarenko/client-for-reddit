@@ -1,39 +1,206 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Rubik:wght@300&display=swap');
+html,
+body {
+  margin: 0;
+  font-family: "Shippori Antique B1", sans-serif;
+  
+}
+
+main {
+  
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    'subreddits posts ';
+  justify-content: center;
+}
+.posts-container {
+  grid-area:posts;
+ 
+}
+.post-container img {
+  width: 90%;
+  height: auto;
+  
+}
+.post-container {
+  
+  background-color: #dfdddd;
+  color: #141c3a;
+  width: 600px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  display: grid;
+  grid-template-areas:
+    'score header '
+    'score main '
+    'score footer ';
+    border-style:solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+}
+.post-container:hover {
+border-color: rgb(100, 98, 98);
+border-style:solid;
+border-width: 1px;
+border-radius: 5px;
+}
+.post-header { 
+  grid-area: header; 
+  font-size: 0.8rem;
+  width: 500px;
+}
+.post-main {
+   grid-area: main; 
+   width: 500px;
+   overflow: hidden;
+  }
+  .post-main h4{
+    margin: 5px;
+   }
+.post-score { 
+  grid-area: score;
+  background-color: rgb(184, 184, 184);
+  width: fit-content;
+  border-radius: 5px;
+ }
+.post-footer {
+  width: 500px;
+   grid-area: footer; 
+  }
+.post-container > div {
+  padding:2px;
+  
+}
+.post-image {
+
+}
+.subreddit-container {
+  grid-area: subreddits;
+  background-color: #dfdddd;
+  color: #000000;
+  width: 200px;
+  border-radius: 5px;
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+}
+.subreddit-container a{
+ color: black;
+ text-decoration: none;
+}
+.subreddit-container a:hover{
+  color: red;
+  
+ }
+.loading {
+  width: 600px;
+  margin: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  background-color: #2f2f2f;
+}
+.header img {
+  padding: 5px;
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.srore-button{
+  font-size: 30px;
+  border: none;
+  background-color: rgb(184, 184, 184);
 }
 
-.App-header {
-  min-height: 100vh;
+
+.comment-btn{
+  background-color: #dfdddd;
+  text-decoration: none;
+  color:black;
+  font-size: 0.9rem;
+}
+.comment-btn:hover{
+  
+  color:red;
+}
+.self-text{
+  text-align: justify;
+  font-size: 0.9rem;
+}
+.self-text-end{
+  background-color: rgb(184, 184, 184);
+  background: linear-gradient(rgb(8, 8, 8), rgb(216, 216, 216));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.comments-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 600px;
+  
+}
+.comment{
+  background-color: whitesmoke;
+  padding: 5px;
+  margin: 5px;
+  font-size: 0.9rem;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.current-post{
+  background-color: #dfdddd;
+  color: #141c3a;
+  width: 600px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  display: grid;
+  grid-template-areas:
+    'score header '
+    'score main '
+    'score footer ';
+    border-style:solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+}
+.current-post img{
+  width:90%
+}
+.sort-bar{
+display: flex;
+grid-area:sort;
+background-color: #dfdddd;
+width: 600px;
+border-radius: 5px;
+margin: 10px;
+
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.sort-bar a{
+  color: #000000;
+  text-decoration: none;
+  margin: 10px;
   }
-  50% {
-    transform: translateY(10px);
+.sort-bar a:hover {
+    color:red;
   }
-  100% {
-    transform: translateY(0px);
+
+  .red{
+    color:red;
   }
-}
+  .black{
+    color:black;
+  }
