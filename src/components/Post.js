@@ -24,7 +24,7 @@ const Post = ({post}) => {
             {post.is_video ? <video src={post.media.reddit_video.fallback_url} width="400" controls></video> : ''}
             </div>
             <div className="post-footer">
-            <Link to={`/comments/${post.subreddit}/${post.id}`} className="comment-btn"><FontAwesomeIcon icon={faComment} /> {post.num_comments} Comments</Link>
+            <div  className="comment-btn"><FontAwesomeIcon icon={faComment} /> {post.num_comments} Comments</div>
             </div>
 
             

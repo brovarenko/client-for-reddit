@@ -1,11 +1,12 @@
 import React from "react";
 import logo from '../images/logo.png'
-
+import Search from "./Search";
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <div className="header">
-        <img src={logo} alt=""></img>
-       
+        <Link to="/">  <img src={logo} alt=""></img> </Link>
+        <Search/>
         </div>
     )
 }

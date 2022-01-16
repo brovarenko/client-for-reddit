@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleUp, faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons';
+import { getNumber } from "../helpers/helpers";
 
 const Score = ({score}) => {
     return (
@@ -9,7 +10,7 @@ const Score = ({score}) => {
             <FontAwesomeIcon className="arrow" icon={faArrowAltCircleUp} />
             </div>
             <div>
-            {score}
+            {getNumber(score)}
             </div>
             <div className="srore-button">
             <FontAwesomeIcon className="arrow" icon={faArrowAltCircleDown} />

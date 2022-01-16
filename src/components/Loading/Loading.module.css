@@ -1,0 +1,61 @@
+.loadingCommunity{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content:left;
+    
+    background-color:  #dddddd;
+    border-radius: 5px;
+    align-items: center;
+   text-decoration: none;
+   color: black;
+   border-width: 1px;
+   border-style:solid;
+   border-color: rgb(233, 233, 233);
+   animation: move linear 2s  infinite ;
+   width: 590px;
+   height: 80px;
+   
+}
+.loadingCommunity div{
+    animation: loadingCommunityAnim linear 1s  infinite ;
+}
+@keyframes loadingCommunityAnim {
+    from { background-color:  #b1b0b0}
+    to { background-color: #8d8d8d}
+  
+    
+}
+@keyframes move {
+    from { background-color:  #dddddd}
+    to { background-color: #c3c3c3}
+  
+    
+} 
+.communityIcon {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50px;
+    background-color: rgb(100, 100, 100);
+    }
+.communityMembers{
+      height: 20px;
+      width: 120px;
+      margin: 0 5px;
+      background-color: rgb(100, 100, 100);
+    }
+.communityDescription{
+      
+      width: 600px;
+      height: 20px;
+      margin: 5px;
+      background-color: rgb(100, 100, 100);
+    }
+.communityName{
+      height: 20px;
+      width: 120px;
+      margin: 0 5px;
+      background-color: rgb(100, 100, 100);
+    }
+    

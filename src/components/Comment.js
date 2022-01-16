@@ -10,7 +10,7 @@ const Comment = ({comment}) => {
         
         <div className="comment">
         
-        <div>{comment.author} {getTime(comment)}</div>
+        <div className="comment-header">{comment.author} {getTime(comment)}</div>
         <div>{comment.body}</div>
         <div> <FontAwesomeIcon className="arrow" icon={faLongArrowAltUp} /> {comment.score}  <FontAwesomeIcon className="arrow" icon={faLongArrowAltDown} /></div>
         </div>

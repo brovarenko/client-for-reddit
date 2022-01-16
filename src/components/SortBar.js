@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
 const SortBar = () => {
     let params = useParams();
+    
     let hotClass = 'black'
     let newClass = 'black'
     let topClass = 'black'
@@ -20,9 +21,9 @@ const SortBar = () => {
     
     return (
     <div className="sort-bar">
-        <Link to={`/subreddit/${params.id}/hot`}><FontAwesomeIcon icon={faFire} className={hotClass}/> Hot</Link>
-        <Link to={`/subreddit/${params.id}/new`}><FontAwesomeIcon icon={faCertificate} className={newClass}/> New</Link>
-        <Link to={`/subreddit/${params.id}/top`}><FontAwesomeIcon icon={faArrowCircleUp} className={topClass}/> Top</Link>
+        <Link to={`/subredditPosts/${params.subreddit}/hot`}><FontAwesomeIcon icon={faFire} className={hotClass}/> Hot</Link>
+        <Link to={`/subredditPosts/${params.subreddit}/new`}><FontAwesomeIcon icon={faCertificate} className={newClass}/> New</Link>
+        <Link to={`/subredditPosts/${params.subreddit}/top`}><FontAwesomeIcon icon={faArrowCircleUp} className={topClass}/> Top</Link>
     </div>
     )
 }
