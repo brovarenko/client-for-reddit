@@ -27,6 +27,12 @@ const Reddit = {
     const json = await query.json()
    
     return json.data.children
+  },
+  async getPopularPosts () {
+    const query = await fetch(`${API_URL}/r/popular.json`)
+    const json = await query.json()
+   
+    return json.data.children
   }
 
 

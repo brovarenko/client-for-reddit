@@ -6,16 +6,22 @@ const SubredditsList = () => {
         <div className="subreddit-container">
             <div className="subreddit-header">Subreddit</div>
           <div>
-            <Link to="/subredditPosts/netflix/hot">Netflix</Link>
+            <Link to="/subredditPosts/gaming/hot">gaming</Link>
           </div>
           <div>
-            <Link to="/subredditPosts/wow/hot">Wow</Link>
+            <Link to="/subredditPosts/pcmasterrace/hot">pcmasterrace</Link>
           </div>
           <div>
-            <Link to="/subredditPosts/AskReddit/hot ">Ask Reddit</Link>
+            <Link to="/subredditPosts/AskReddit/hot ">ask reddit</Link>
           </div>
           <div>
-            <Link to="/subredditPosts/worldnews/hot ">World News</Link>
+            <Link to="/subredditPosts/worldnews/hot ">world news</Link>
+          </div>
+          <div>
+            <Link to="/subredditPosts/pics/hot ">pics</Link>
+          </div>
+          <div>
+            <Link to="/subredditPosts/technology/hot ">technology</Link>
           </div>
           
         

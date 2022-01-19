@@ -4,6 +4,7 @@ import { faComment } from '@fortawesome/free-regular-svg-icons';
 import Score from "./Score";
 import { Link } from "react-router-dom";
 import { getTime } from "../helpers/helpers";
+import parse from 'html-react-parser'
 const Post = ({post}) => {
   
    
@@ -22,6 +23,8 @@ const Post = ({post}) => {
             <p className="self-text">{post.selftext.substring(0,400)}</p>
             {post.selftext.length > 400 ? <p className="self-text-end">{post.selftext.substring(400,600)}</p> : null}
             {post.is_video ? <video src={post.media.reddit_video.fallback_url} width="400" controls></video> : ''}
+            
+               { (post.media && post.media.type === 'youtube.com' )? parse(post.media.oembed.html)  : ''}
             </div>
             <div className="post-footer">
             <div  className="comment-btn"><FontAwesomeIcon icon={faComment} /> {post.num_comments} Comments</div>
