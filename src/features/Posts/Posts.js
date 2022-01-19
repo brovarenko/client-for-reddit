@@ -31,9 +31,11 @@ const Posts = () => {
         return <div className="loading">Loading...</div>;
       }
     return ( 
+      
       <div className="subreddit">
+       
       <div className="posts-container">
-           
+     
            <SortBar/>
              {post.map(post => 
                  (<Post key ={post.data.id} post={post.data} />)
@@ -44,7 +46,7 @@ const Posts = () => {
         <SubredditInfo data={subredditData}/>
         
       </div>
-        
+      
         
     )
 };

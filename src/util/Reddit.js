@@ -4,9 +4,7 @@ const API_URL = 'https://www.reddit.com';
 const Reddit = {  
 
   async getPosts (str) {
-  const query = await fetch(`${API_URL}/r/${str}/.json`, {
-    type: 'text/html',
-  })
+  const query = await fetch(`${API_URL}/r/${str}/.json`)
   const json = await query.json()
   return json.data.children
   },

@@ -7,9 +7,6 @@ body {
   background-color:whitesmoke;
 }
 
-main {
-  
-}
 
 .app {
   display:flex;
@@ -80,9 +77,7 @@ border-radius: 5px;
   padding:2px;
   
 }
-.post-image {
-  
-}
+
 .subreddit-container {
   grid-area: subreddits;
   background-color:rgb(233, 233, 233);
@@ -103,8 +98,8 @@ border-radius: 5px;
   
  }
 .loading {
-  width: 600px;
-  margin: 10px;
+  width: 967px;
+  margin: 5px;
   text-align: center;
 }
 .header {
@@ -257,7 +252,8 @@ margin: 10px;
   .subreddit{
     display: flex;
     flex-wrap: wrap;
-    max-width: 950px;
+    width: 950px;
+    margin: 5px;
   }
   .subreddit-info div{
     padding: 5px;

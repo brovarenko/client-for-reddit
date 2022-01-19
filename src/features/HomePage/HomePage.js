@@ -2,7 +2,6 @@ import React from "react";
 import Post from "../../components/Post";
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { selectPosts } from "./HomePageSlice";
 import { getPopularPostsAsync } from "./HomePageSlice";
 import { selectPostsIsLoading } from "./HomePageSlice";
