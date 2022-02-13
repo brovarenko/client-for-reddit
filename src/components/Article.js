@@ -3,8 +3,10 @@ import { getTime } from "../helpers/helpers";
 import Score from "./Score";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-regular-svg-icons';
+
 const Article = ({currentPost}) => {
-    const post = currentPost
+   const post = currentPost;
+
    return (
        <div className="current-post">
            <div className="post-score">
@@ -22,10 +24,9 @@ const Article = ({currentPost}) => {
             <div className="post-footer">
             <div ><FontAwesomeIcon icon={faComment} /> {post.num_comments} Comments</div>
             </div>
-            
        </div>
    
-   )
+   );
 
 }
 

@@ -6,24 +6,18 @@ body {
   font-family: "Shippori Antique B1", sans-serif;
   background-color:whitesmoke;
 }
-
-
 .app {
   display:flex;
   justify-content: center;
-  
 }
 .posts-container {
   grid-area:posts;
- 
 }
 .post-container img {
   width: 90%;
   height: auto;
-  
 }
 .post-container {
-  
   background-color:rgb(233, 233, 233);
   color: #141c3a;
   width: 600px;
@@ -39,7 +33,6 @@ body {
     border-style:solid;
     border-width: 1px;
     border-color: rgb(255, 255, 255);
-    
 }
 .post-container:hover {
 border-color: rgb(100, 98, 98);
@@ -54,12 +47,10 @@ border-radius: 5px;
 }
 .post-main {
    grid-area: main; 
-   
    overflow: hidden;
   }
   .post-main h4{
     margin: 5px;
-    
    }
 .post-score { 
   grid-area: score;
@@ -67,7 +58,6 @@ border-radius: 5px;
   width: 50px;
   border-radius: 5px;
   color:white;
-  
  }
 .post-footer {
   width: 500px;
@@ -75,7 +65,6 @@ border-radius: 5px;
   }
 .post-container > div {
   padding:2px;
-  
 }
 
 .subreddit-container {
@@ -86,7 +75,6 @@ border-radius: 5px;
   border-radius: 5px;
   height: fit-content;
   margin: 10px;
-  
 }
 .subreddit-container a{
  color: black;
@@ -95,7 +83,6 @@ border-radius: 5px;
 }
 .subreddit-container a:hover{
   color: tomato;
-  
  }
 .loading {
   width: 967px;
@@ -107,7 +94,6 @@ border-radius: 5px;
   display: flex;
   max-width: 100%;
   background-color: #2f2f2f;
-  
 }
 .header img {
   padding: 5px;
@@ -119,12 +105,11 @@ border-radius: 5px;
  margin-right: auto;
  display: flex;
  align-items: center;
- 
 }
 .search input{
   max-width: 300px;
   padding: 7px;
- border-radius: 5px;
+  border-radius: 5px;
 }
 .search a{
   margin-left: 5px;
@@ -136,7 +121,6 @@ border-radius: 5px;
 }
 .search a:hover{
   background-color: rgb(180, 33, 6);
-  
 }
 
 
@@ -147,7 +131,6 @@ border-radius: 5px;
   font-size: 0.9rem;
 }
 .comment-btn:hover{
-  
   color:tomato;
 }
 .self-text{
@@ -213,7 +196,6 @@ background-color: #414141;
 width: 600px;
 border-radius: 5px;
 margin: 10px;
-
 }
 
 .sort-bar a{
@@ -224,7 +206,6 @@ margin: 10px;
 .sort-bar a:hover {
     color:tomato;
   }
-
   .red {
     color:tomato;
   }
@@ -246,9 +227,7 @@ margin: 10px;
     padding: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    
   }
-  
   .subreddit{
     display: flex;
     flex-wrap: wrap;
@@ -257,9 +236,7 @@ margin: 10px;
   }
   .subreddit-info div{
     padding: 5px;
-    
   }
-  
   .communities{
     display: flex;
     flex-direction: column;
@@ -287,9 +264,8 @@ margin: 10px;
   }
   
   .community-icon {
-  width: 50px;
-  margin: 0 5px;
-
+    width: 50px;
+    margin: 0 5px;
   }
   .community-icon img{
     width:40px;
@@ -307,7 +283,6 @@ margin: 10px;
   .community-name{
     width: fit-content;
     margin: 0 5px;
-    
   }
   .loading-list-communites{
     display: flex;

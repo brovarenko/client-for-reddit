@@ -10,8 +10,7 @@ const initialState = {
 
 export const getCommentsAsync = createAsyncThunk(
   'comments/getCommentsAsync',
-  async (subreddit) => {
-  
+    async (subreddit) => {
     const response = await Reddit.getPostComments(subreddit)
     return response
   }
@@ -20,7 +19,6 @@ export const getCommentsAsync = createAsyncThunk(
 export const commentsSlice = createSlice({
   name: 'comments',
   initialState,
-  
   reducers: {
     
   },

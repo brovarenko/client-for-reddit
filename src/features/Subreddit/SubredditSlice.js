@@ -39,6 +39,6 @@ export const getSubredditInfAsync = createAsyncThunk(
   
   
   export const selectSubreddit = (state) => state.subreddit.subreddit;
-  export const selectSubredditIsLoading = state => state.subreddit.isLoading
+  export const selectSubredditIsLoading = state => state.subreddit.isLoading;
   
   export default subredditSlice.reducer;
