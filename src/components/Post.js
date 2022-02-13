@@ -35,7 +35,7 @@ const Post = ({post}) => {
            
             
         </Link>
-    )
+    );
 }
 
 export default Post;

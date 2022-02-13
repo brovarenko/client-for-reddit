@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const SubredditsList = () => {
     return (
       
@@ -23,11 +24,9 @@ const SubredditsList = () => {
           <div>
             <Link to="/subredditPosts/technology/hot ">technology</Link>
           </div>
-          
-        
         </div>
         
-    )
+    );
 }
 
 export default SubredditsList;

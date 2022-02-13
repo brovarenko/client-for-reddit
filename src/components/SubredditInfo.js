@@ -15,7 +15,7 @@ const SubredditInfo = ({data}) => {
      <div className="subreddit-online"> {data.active_user_count} Online  </div>
      <div className="subreddit-created">Created {getCreatedDate(data.created)}</div>
     </div>
-    )
+    );
 }
 
 export default SubredditInfo;

@@ -13,8 +13,6 @@ import { selectPostsIsLoading } from "../Posts/PostsSlice";
 
 const Comments = () => {
     const dispatch = useDispatch();
-    
-    
     const comments = useSelector(selectComments);
     const commentsIsLoading = useSelector(selectISLoading);
     const postsIsLoading = useSelector(selectPostsIsLoading);
@@ -23,13 +21,9 @@ const Comments = () => {
     const currentPost = posts.filter(post => post.data.id === param.articleId);
     
     
-    
-    
-    let str = `${param.subreddit}/comments/${param.articleId}/`
+    let str = `${param.subreddit}/comments/${param.articleId}/`;
    
     useEffect(() => {
-        
-        
         dispatch(getCommentsAsync(str));
         dispatch(getPostsAsync(param.subreddit));
       }, [dispatch,str,param.subreddit]);
@@ -41,22 +35,18 @@ const Comments = () => {
        }
 
     return ( 
-        <div>
-            
+        <div> 
          <Article currentPost={currentPost[0].data}/>
         <div className="comments-container">
             <section >
-           
              {comments.map(comments => 
                  (<Comment key ={comments.data.id} comment={comments.data} />)
             )} 
-            
-            
             </section>
         </div>
         </div>
         
-    )
+    );
 };
 
 export default Comments;

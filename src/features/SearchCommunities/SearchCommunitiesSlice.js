@@ -10,7 +10,6 @@ const initialState = {
 export const getSearchCommunities = createAsyncThunk(
     'searchCommunities/getSearchCommunities',
     async (term) => {
-      
       const response = await Reddit.searchCommunities(term)
       return response
     }
@@ -19,7 +18,6 @@ export const getSearchCommunities = createAsyncThunk(
   export const searchCommunitiesSlice = createSlice({
     name: 'searchCommunities',
     initialState,
-    
     extraReducers: {
         [getSearchCommunities.pending]: (state) => {
           state.isLoading = true;

@@ -16,7 +16,7 @@ const Score = ({score}) => {
             <FontAwesomeIcon className="arrow" icon={faArrowAltCircleDown} />
             </div>
         </div>
-    )
+    );
 }
 
 export default Score;

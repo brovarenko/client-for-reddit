@@ -5,12 +5,13 @@ import {
     Link,
     useParams
   } from "react-router-dom";
+
 const SortBar = () => {
     let params = useParams();
     
-    let hotClass = 'black'
-    let newClass = 'black'
-    let topClass = 'black'
+    let hotClass = 'black';
+    let newClass = 'black';
+    let topClass = 'black';
     if(params.sort === 'hot'){
         hotClass ='red'
     } else if (params.sort === 'new'){
@@ -25,7 +26,7 @@ const SortBar = () => {
         <Link to={`/subredditPosts/${params.subreddit}/new`}><FontAwesomeIcon icon={faCertificate} className={newClass}/> New</Link>
         <Link to={`/subredditPosts/${params.subreddit}/top`}><FontAwesomeIcon icon={faArrowCircleUp} className={topClass}/> Top</Link>
     </div>
-    )
+    );
 }
 
 export default SortBar;

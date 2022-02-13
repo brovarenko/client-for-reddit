@@ -26,7 +26,7 @@ export const getTime = (time) => {
     } else if (min > 1) {
         return min + " minutes ago"
     } 
-}
+};
 
 export const getNumber = (number)=> {
     if (number > 1000000){
@@ -38,5 +38,5 @@ export const getNumber = (number)=> {
 
 export const getCreatedDate = (time) => {
     const date = new Date(time*1000);
-    return  date.toLocaleDateString()
+    return  date.toLocaleDateString();
 }

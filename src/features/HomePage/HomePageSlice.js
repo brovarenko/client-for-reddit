@@ -10,8 +10,8 @@ const initialState = {
 export const getPopularPostsAsync = createAsyncThunk(
   'homePage/getPopularPostsAsync',
   async () => {
-    const response = await Reddit.getPopularPosts()
-    return response
+    const response = await Reddit.getPopularPosts();
+    return response;
   }
 );
 
@@ -37,6 +37,6 @@ export const homePageSlice = createSlice({
 });
 
 export const selectPosts = state => state.homePage.posts;
-export const selectPostsIsLoading = state => state.homePage.isLoading
+export const selectPostsIsLoading = state => state.homePage.isLoading;
 
 export default homePageSlice.reducer;

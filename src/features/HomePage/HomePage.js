@@ -8,16 +8,12 @@ import { selectPostsIsLoading } from "./HomePageSlice";
 
 const HomePage = () => {
     const dispatch = useDispatch();
-    
-    
-    const post = useSelector(selectPosts)
-    const postsIsLoading = useSelector(selectPostsIsLoading)
+    const post = useSelector(selectPosts);
+    const postsIsLoading = useSelector(selectPostsIsLoading);
     
     
     useEffect(() => {
-        
         dispatch(getPopularPostsAsync());
-        
       }, [dispatch]);
       if (postsIsLoading) {
         return <div className="loading">Loading...</div>;
@@ -25,19 +21,14 @@ const HomePage = () => {
     return ( 
       <div className="subreddit">
       <div className="posts-container">
-           
              {post.map(post => 
                  (<Post key ={post.data.id} post={post.data} />)
-            )} 
-            
-           
-        </div>
-        
-        
+            )}  
+        </div> 
       </div>
         
         
-    )
+    );
 };
 
 export default HomePage;
