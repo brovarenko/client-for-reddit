@@ -1,0 +1,15 @@
+.post{
+    display: flex;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    margin: 10px;
+}
+.score{
+    width: 50px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
